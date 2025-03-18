@@ -4,15 +4,9 @@ import memoryGame from "./assets/memoryGame.jpeg";
 import taskList from "./assets/taskList.jpeg";
 import mLearning from "./assets/mLearning.jpeg";
 import threeInLine from "./assets/threeInLine.jpeg";
+import javaAirplane from "./assets/javaAirplane.jpeg";
 
 const infoProjects = [
-    {
-        name : 'APP CINEMA',
-        description : 'Aplicación web para buscar películas, series de televisión y actores. Utiliza la API de The Movie Database (TMDb).',
-        image : cinemaApp,
-        url : 'https://cinema-appdb-tmdbapi.netlify.app/',
-        github : 'https://github.com/DBermudez23/cinema-app-TMDB-API'
-    },
     {
         name : 'APP NOTICIAS',
         description : 'Aplicación web para buscar noticias de cualquier tema. Utiliza la API de NewsAPI.',
@@ -33,6 +27,19 @@ const infoProjects = [
         image : taskList,
         url : 'https://tasks-app-crud.onrender.com/signup/',
         github : 'https://github.com/DBermudez23/Tasks-app-CRUD'
+    },
+    {
+        name : 'JAVA APLICACION SISTEMA DE RESERVAS AEROPUERTO',
+        description : 'Aplicación Java desarrollada con Maven y Swing para la gestión de reservas de vuelos en una aerolínea.',
+        image : javaAirplane,
+        github : 'https://github.com/DBermudez23/Aeropuerto'
+    },
+    {
+        name : 'APP CINEMA',
+        description : 'Aplicación web para buscar películas, series de televisión y actores. Utiliza la API de The Movie Database (TMDb).',
+        image : cinemaApp,
+        url : 'https://cinema-appdb-tmdbapi.netlify.app/',
+        github : 'https://github.com/DBermudez23/cinema-app-TMDB-API'
     },
     {
         name : 'CLASIFICACIÓN DE PAISES POR RIESGO ENERGETICO (MACHINE LEARNING)',

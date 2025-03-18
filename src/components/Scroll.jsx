@@ -2,6 +2,7 @@ import Projects from "./Project";
 import About from "./About";
 import Contact from "./Contact";
 import Stack from "./Stack";
+import DescargarCV from "./DescargarCV.JSX";
 
 function Scroll() {
   return (
@@ -22,6 +23,11 @@ function Scroll() {
 
       <section id="contact" className="mb-16">
         <Contact />
+      </section>
+
+
+      <section  className="mb-16">
+        <DescargarCV />
       </section>
     </div>
   );

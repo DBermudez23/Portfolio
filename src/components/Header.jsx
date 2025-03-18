@@ -2,7 +2,7 @@ import profile from "../assets/profile.jpeg";
 
 function Header() {
   return (
-    <header className="w-full lg:w-140 bg-gray-800 flex flex-col items-center justify-center text-center px-4 py-6 lg:fixed lg:min-h-screen sm:border-b-2 border-emerald-300 lg:border-r-2 lg:border-emerald-300 lg:shadow-lg">
+    <header className="w-full lg:w-140 bg-gray-800 flex flex-col items-center justify-center text-center px-4 py-6 lg:fixed lg:min-h-screen sm:border-b-2 border-emerald-300 lg:border-r-2 lg:border-b-0 lg:border-emerald-300 lg:shadow-lg">
       {/* Títles */}
       <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white mb-2 tracking-wide animate-fade-in">
         Daniel Bermúdez
