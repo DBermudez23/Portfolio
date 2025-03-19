@@ -29,7 +29,7 @@ const infoProjects = [
         github : 'https://github.com/DBermudez23/Tasks-app-CRUD'
     },
     {
-        name : 'JAVA APLICACION SISTEMA DE RESERVAS AEROPUERTO',
+        name : 'JAVA APLICACIÓN SISTEMA DE RESERVAS AEROPUERTO',
         description : 'Aplicación Java desarrollada con Maven y Swing para la gestión de reservas de vuelos en una aerolínea.',
         image : javaAirplane,
         github : 'https://github.com/DBermudez23/Aeropuerto'
