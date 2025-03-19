@@ -2,7 +2,7 @@ import Projects from "./Project";
 import About from "./About";
 import Contact from "./Contact";
 import Stack from "./Stack";
-import DescargarCV from "./DescargarCV.JSX";
+import DescargarCV from "./DescargarCV.jsx";
 
 function Scroll() {
   return (
