@@ -5,6 +5,7 @@ import taskList from "./assets/taskList.jpeg";
 import mLearning from "./assets/mLearning.jpeg";
 import threeInLine from "./assets/threeInLine.jpeg";
 import javaAirplane from "./assets/javaAirplane.jpeg";
+import Datastructure from "./assets/DataStructure.jpeg";
 
 const infoProjects = [
     {
@@ -46,6 +47,12 @@ const infoProjects = [
         description : 'Clasificación de paises por riesgo energético. Realizado con Python y la librería Scikit-Learn.',
         image : mLearning,
         github : 'https://github.com/DBermudez23/Machine-learning-project/tree/main'
+    },
+    {
+        name : 'ESTRUCTURAS DE DATOS (C++)',
+        description : 'Un proyecto de C++ centrado en la implementación y manipulación de estructuras de datos básicas, como pilas, colas y árboles.',
+        image : Datastructure,
+        github : 'https://github.com/DBermudez23/Data-Structure-Project'
     },
     {
         name : '3 EN LINEA',
