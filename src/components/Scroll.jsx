@@ -6,27 +6,26 @@ import DescargarCV from "./DescargarCV.jsx";
 
 function Scroll() {
   return (
-    <div className="container mx-auto px-2 lg:px-0 py-8 pt-24 lg:ml-140 w-full min-h-screen overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-900 bg-gradient-to-br from-gray-800 via-violet-700 to-emerald-950">
-
-      <section id="about" className="mb-16">
+    <div
+      className="w-full min-h-screen bg-mst-gradient py-20 px-6 overflow-y-auto px-4 sm:px-6 lg:px-20 py-20 space-y-28 scrollbar-thin scrollbar-thumb-violet-600 scrollbar-track-transparent"
+    >
+      <section id="about">
         <About />
       </section>
 
-      <section id="stack" className="mb-16">
+      <section id="stack">
         <Stack />
       </section>
 
-      <section id="projects" className="mb-16">
+      <section id="projects">
         <Projects />
       </section>
 
-
-      <section id="contact" className="mb-16">
+      <section id="contact">
         <Contact />
       </section>
 
-
-      <section  className="mb-16">
+      <section>
         <DescargarCV />
       </section>
     </div>

@@ -1,55 +1,63 @@
-import { FaGithub, FaLink } from 'react-icons/fa'; // Importa los íconos
+import { FaGithub, FaLink } from 'react-icons/fa';
 import infoProjects from "../projectsInfo.js";
 
 function Projects() {
   return (
-    <div className='w-full flex flex-col items-center justify-center'>
-        <div className='py-8'>
-            <h2 className="text-3xl font-bold text-white mb-6 text-center ">Mis Proyectos</h2>
-        </div>
-        <div className="container mx-auto px-4 py-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-      {infoProjects.map((project, index) => (
-        <a href={project.url ? project.url : project.github}>
-          <div
+    <section className="w-full py-20 px-6 flex justify-center">
+      <div className="w-full max-w-7xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl p-10 text-white">
+        <h2 className="text-4xl font-bold text-center text-mst-100 mb-12 border-b border-mst-400 pb-4">
+          Mis Proyectos
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-10">
+          {infoProjects.map((project, index) => (
+            <div
               key={index}
-              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-6 transform transition duration-300 hover:scale-105 hover:shadow-xl w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg"
+              className="w-full sm:w-[85%] md:w-[45%] lg:w-[40%] xl:w-[30%] bg-white/10 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-lg border border-white/10"
             >
-              {/* Image */}
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
-              {/* Contenido */}
-              <div className="p-6">
-                <h2 className="text-xl font-bold text-white mb-2">{project.name}</h2>
-                <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
+              <div className="h-56 overflow-hidden rounded-t-2xl">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
-              {/* Buttons */}
-              <div className="flex justify-end p-4 bg-gray-900">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-400 hover:text-white mr-4 transition-colors duration-200"
-                >
-                  <FaLink size={20} />
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  <FaGithub size={20} />
-                </a>
+
+              <div className="p-6 flex flex-col justify-between min-h-[220px]">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
+                  <p className="text-mst-100 text-sm leading-relaxed">{project.description}</p>
+                </div>
+
+                <div className="flex gap-3 justify-end mt-6">
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                    >
+                      <FaLink size={18} />
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                    >
+                      <FaGithub size={18} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-        </a>
-      ))}
-    </div>
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
- 
-export default Projects;    
+
+export default Projects;

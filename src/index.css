@@ -1,37 +1,8 @@
 @import "tailwindcss";
 
-/* Animación de desplazamiento infinito para Stack técnologico*/
-.animate-scroll {
-    display: inline-block;
-    animation: scroll 20s linear infinite;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Mueve la mitad del ancho total para un efecto suave */
-    }
-  }
-
-/* Animaciones personalizadas */
-.animate-fade-in {
-  animation: fadeIn 1s ease-in-out;
+/* Gradiente personalizado para fondo */
+.bg-mst-gradient-inverted {
+  background: linear-gradient(to top left, #101D25, #223F50, #3B6C89, #72A4C2, #C0D7E4);
+  color: white;
 }
 
-.animate-fade-in-delay {
-  animation: fadeIn 1s ease-in-out 0.3s forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
