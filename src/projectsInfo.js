@@ -1,5 +1,5 @@
 import cinemaApp from "./assets/cinemaApp.jpeg";
-import newsApp from "./assets/newsApp.jpeg";
+import newsApp from "./assets/newsApp.png";
 import memoryGame from "./assets/memoryGame.jpeg";
 import taskList from "./assets/taskList.jpeg";
 import mLearning from "./assets/mLearning.jpeg";
