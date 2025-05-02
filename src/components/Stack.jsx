@@ -7,7 +7,7 @@ import {
   import { DiProlog, DiMysql } from "react-icons/di";
   import { TbSql } from "react-icons/tb";
   import { RiTailwindCssFill } from "react-icons/ri";
-  import { SiNumpy, SiPandas, SiJupyter, SiLinuxmint, SiDjango, SiApachenetbeanside, SiNodedotjs, SiApache, SiQt } from "react-icons/si";
+  import { SiNumpy, SiPandas, SiJupyter, SiLinuxmint, SiDjango, SiApachenetbeanside, SiNodedotjs, SiApache, SiQt, SiSvelte, SiTypescript } from "react-icons/si";
   import { FcLinux } from "react-icons/fc";
   import { VscVscode } from "react-icons/vsc";
   import { useState } from "react";
@@ -20,6 +20,8 @@ import {
     { name: "Tailwind", icon: <RiTailwindCssFill />, color: "text-cyan-300", category: "Frontend", desc: "Framework de utilidades CSS" },
     { name: "Bootstrap", icon: <FaBootstrap />, color: "text-purple-500", category: "Frontend", desc: "Estilos rápidos y responsivos" },
     { name: "PyQt", icon: <SiQt />, color: "text-green-400", category: "Frontend", desc: "Interfaz gráfica en Python con Qt" },
+    { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-600", category: "Frontend", desc: "Superset tipado de JavaScript para mayor seguridad" },
+    { name: "SvelteKit", icon: <SiSvelte />, color: "text-orange-500", category: "Frontend", desc: "Framework de aplicaciones web fullstack basado en Svelte" },
   
     { name: "Python", icon: <FaPython />, color: "text-blue-700", category: "Backend", desc: "Backend, scripting, data" },
     { name: "Django", icon: <SiDjango />, color: "text-yellow-400", category: "Backend", desc: "Framework de Python para backend" },

@@ -3,7 +3,7 @@ import newsApp from "./assets/newsApp.png";
 import memoryGame from "./assets/memoryGame.jpeg";
 import taskList from "./assets/taskList.jpeg";
 import mLearning from "./assets/mLearning.jpeg";
-import threeInLine from "./assets/threeInLine.jpeg";
+import RickMorty from "./assets/RickMorty.png";
 import javaAirplane from "./assets/javaAirplane.jpeg";
 import Datastructure from "./assets/DataStructure.jpeg";
 import visorImagenes from "./assets/visorImagenes.png";
@@ -29,6 +29,13 @@ const infoProjects = [
         image : visorImagenes,
         url : 'https://github.com/DBermudez23/Visor_imagenes',
         github : 'https://github.com/DBermudez23/Visor_imagenes'
+    },
+    {
+        name : 'APP DE RICK Y MORTY',
+        description : 'Aplicación web responsiva desarrollada con SvelteKit y Tailwind CSS que consume la API de Rick and Morty.',
+        image : RickMorty,
+        url : 'https://rickmortydbermu.netlify.app/',
+        github : 'https://github.com/DBermudez23/Rick-and-Morty/'
     },
     {
         name : 'JAVA APLICACIÓN SISTEMA DE RESERVAS AEROPUERTO',
@@ -61,12 +68,6 @@ const infoProjects = [
         image : cinemaApp,
         url : 'https://cinema-appdb-tmdbapi.netlify.app/',
         github : 'https://github.com/DBermudez23/cinema-app-TMDB-API'
-    },
-    {
-        name : '3 EN LINEA',
-        description : 'Juego de 3 en línea. Realizado con HTML, CSS y JavaScript. De mis primeros proyectos.',
-        image : threeInLine,
-        url : 'https://3-in-linejs.netlify.app/'
     }
 ]
 
