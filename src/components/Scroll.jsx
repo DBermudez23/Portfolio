@@ -7,7 +7,7 @@ import DescargarCV from "./DescargarCV.jsx";
 function Scroll() {
   return (
     <div
-      className="w-full min-h-screen bg-mst-gradient py-20 px-6 overflow-y-auto px-4 sm:px-6 lg:px-20 py-20 space-y-28 scrollbar-thin scrollbar-thumb-violet-600 scrollbar-track-transparent"
+      className="w-full min-h-screen overflow-y-auto overflow-x-hidden bg-[#111827]/90 backdrop-blur-md text-white py-20 sm:px-4 space-y-10 scrollbar-thin scrollbar-thumb-[#3c6e71] scrollbar-track-transparent"
     >
       <section id="about">
         <About />

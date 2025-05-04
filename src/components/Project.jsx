@@ -1,58 +1,87 @@
-import { FaGithub, FaLink } from 'react-icons/fa';
-import infoProjects from "../projectsInfo.js";
+"use client";
+
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { FaGithub, FaLink } from "react-icons/fa";
+import infoProjects from "../projectsInfo";
+import ColourfulText from "./ui/colorfull-text";
 
 function Projects() {
+
   return (
     <section className="w-full py-20 px-6 flex justify-center">
       <div className="w-full max-w-7xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl p-10 text-white">
-        <h2 className="text-4xl font-bold text-center text-mst-100 mb-12 border-b border-mst-400 pb-4">
-          Mis Proyectos
-        </h2>
+      <h2 className="text-4xl font-bold text-center mb-12 border-b border-mst-400 pb-4">
+        <ColourfulText text="Mis proyectos" />
+      </h2>
 
-        <div className="flex flex-wrap justify-center gap-10">
+
+        <div className="flex flex-wrap justify-center gap-8">
           {infoProjects.map((project, index) => (
-            <div
+            <CardContainer
               key={index}
-              className="w-full sm:w-[85%] md:w-[45%] lg:w-[40%] xl:w-[30%] bg-white/10 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-lg border border-white/10"
+              containerClassName="flex justify-center"
             >
-              <div className="h-56 overflow-hidden rounded-t-2xl">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
+              <CardBody className="w-[280px] h-[500px] flex flex-col justify-between bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-2">
 
-              <div className="p-6 flex flex-col justify-between min-h-[220px]">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
-                  <p className="text-mst-100 text-sm leading-relaxed">{project.description}</p>
-                </div>
+                {/* Imagen */}
+                <CardItem
+                  translateZ={60}
+                  rotateX={5}
+                  className="h-[200px] w-full overflow-hidden"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </CardItem>
 
-                <div className="flex gap-3 justify-end mt-6">
-                  {project.url && (
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                {/* Contenido */}
+                <div className="px-4 py-4 flex flex-col justify-between flex-grow">
+                  <div>
+                    <CardItem
+                      translateZ={40}
+                      className="text-lg font-bold text-white mb-2 leading-tight"
                     >
-                      <FaLink size={18} />
-                    </a>
-                  )}
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                      {project.name}
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as="p"
+                      className="text-sm text-mst-100 leading-relaxed line-clamp-4"
                     >
-                      <FaGithub size={18} />
-                    </a>
-                  )}
+                      {project.description}
+                    </CardItem>
+                  </div>
+
+                  {/* Botones */}
+                  <div className="flex gap-2 justify-end mt-4">
+                    {project.url && (
+                      <CardItem
+                        translateZ={20}
+                        as="a"
+                        href={project.url}
+                        target="_blank"
+                        className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                      >
+                        <FaLink size={16} />
+                      </CardItem>
+                    )}
+                    {project.github && (
+                      <CardItem
+                        translateZ={20}
+                        as="a"
+                        href={project.github}
+                        target="_blank"
+                        className="p-2 rounded-full bg-white/10 hover:bg-mst-400 text-mst-100 hover:text-white transition"
+                      >
+                        <FaGithub size={16} />
+                      </CardItem>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </div>
+              </CardBody>
+            </CardContainer>
           ))}
         </div>
       </div>

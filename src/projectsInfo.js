@@ -27,7 +27,6 @@ const infoProjects = [
         name : 'VISOR Y EDITOR DE IMAGENES CON PyQt & NumPy',
         description : 'Desarrollada en Python con PyQt6 que permite visualizar y editar imágenes con técnicas de procesamiento con NumPy y Matplotlib.',
         image : visorImagenes,
-        url : 'https://github.com/DBermudez23/Visor_imagenes',
         github : 'https://github.com/DBermudez23/Visor_imagenes'
     },
     {
