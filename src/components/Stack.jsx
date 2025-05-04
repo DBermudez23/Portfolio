@@ -56,7 +56,7 @@ function Stack() {
     return (
       <section className="w-full py-20 px-6 flex justify-center">
         <div className="w-full max-w-6xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl p-10 text-white">
-          <h2 className="text-4xl font-bold text-center mb-12 border-b border-mst-400 pb-4">
+          <h2 className="text-2xl lg:text-4xl font-bold text-center mb-12 border-b border-mst-400 pb-4">
               <ColourfulText text="Stack tecnológico" />
           </h2>
   

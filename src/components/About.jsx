@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="w-full bg-transparent py-20 lg:px-6 flex justify-center">
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl p-10 text-white max-w-3xl w-full">
-          <h2 className="text-4xl font-bold text-center mb-12 border-b border-mst-400 pb-4">
+          <h2 className="lg:text-4xl font-bold text-center mb-12 border-b border-mst-400 pb-4">
               <ColourfulText text="Un poco sobre mi perfil profesional." />
           </h2>
         <div className="space-y-6 text-base sm:text-lg leading-relaxed text-mst-100">
