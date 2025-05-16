@@ -7,11 +7,12 @@ import RickMorty from "./assets/RickMorty.png";
 import javaAirplane from "./assets/javaAirplane.jpeg";
 import Datastructure from "./assets/DataStructure.jpeg";
 import visorImagenes from "./assets/visorImagenes.png";
+import Zoologico from "./assets/Zoologico.png";
 
 const infoProjects = [
     {
         name : 'APP NOTICIAS',
-        description : 'Aplicación web para buscar noticias de cualquier tema. Utiliza la API de NewsAPI.',
+        description : 'Aplicación web para buscar noticias de cualquier tema, construida en React. Utiliza la API de NewsAPI y se consume con RTK query.',
         image : newsApp,
         url : 'https://newsdbevenntreg.netlify.app/',
         github : 'https://github.com/DBermudez23/News-App'
@@ -24,17 +25,23 @@ const infoProjects = [
         github : 'https://github.com/DBermudez23/Tasks-app-CRUD'
     },
     {
-        name : 'VISOR Y EDITOR DE IMAGENES CON PyQt & NumPy',
-        description : 'Desarrollada en Python con PyQt6 que permite visualizar y editar imágenes con técnicas de procesamiento con NumPy y Matplotlib.',
-        image : visorImagenes,
-        github : 'https://github.com/DBermudez23/Visor_imagenes'
-    },
-    {
         name : 'APP DE RICK Y MORTY',
         description : 'Aplicación web responsiva desarrollada con SvelteKit y Tailwind CSS que consume la API de Rick and Morty.',
         image : RickMorty,
         url : 'https://rickmortydbermu.netlify.app/',
         github : 'https://github.com/DBermudez23/Rick-and-Morty/'
+    },
+    {
+        name : 'APP DESKTOP ZOOLOGICO',
+        description : 'Java Swing + Maven: gestión de usuarios, datos de animales y venta de boletos con promociones dinámicas. Diseño basado en MVC y Strategy.',
+        image : Zoologico,
+        github : 'https://github.com/DBermudez23/Zoologico-Java'
+    },
+    {
+        name : 'VISOR Y EDITOR DE IMAGENES CON PyQt & NumPy',
+        description : 'Desarrollada en Python con PyQt6 que permite visualizar y editar imágenes con técnicas de procesamiento con NumPy y Matplotlib.',
+        image : visorImagenes,
+        github : 'https://github.com/DBermudez23/Visor_imagenes'
     },
     {
         name : 'JAVA APLICACIÓN SISTEMA DE RESERVAS AEROPUERTO',
@@ -60,13 +67,6 @@ const infoProjects = [
         image : memoryGame,
         url : 'https://memoty-game-db.netlify.app/',
         github : 'https://github.com/DBermudez23/memory-game'
-    },
-    {
-        name : 'APP CINEMA',
-        description : 'Aplicación web para buscar películas, series de televisión y actores. Utiliza la API de The Movie Database (TMDb).',
-        image : cinemaApp,
-        url : 'https://cinema-appdb-tmdbapi.netlify.app/',
-        github : 'https://github.com/DBermudez23/cinema-app-TMDB-API'
     }
 ]
 
