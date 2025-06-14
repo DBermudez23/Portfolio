@@ -6,8 +6,10 @@ import mLearning from "./assets/mLearning.jpeg";
 import RickMorty from "./assets/RickMorty.png";
 import javaAirplane from "./assets/javaAirplane.jpeg";
 import Datastructure from "./assets/DataStructure.jpeg";
+import organizadorPartidos from "./assets/organizadorPartidos.jpeg";
 import visorImagenes from "./assets/visorImagenes.png";
 import Zoologico from "./assets/Zoologico.png";
+import whispersBackend from "./assets/whispersBackend.png";
 
 const infoProjects = [
     {
@@ -16,6 +18,20 @@ const infoProjects = [
         image : newsApp,
         url : 'https://newsdbevenntreg.netlify.app/',
         github : 'https://github.com/DBermudez23/News-App'
+    },
+    {
+        'name': 'WHISPERS BACKEND',
+        'description': 'API REST con Node.js, Express y MongoDB Atlas. Soporta JWT, CORS y CRUD protegido. Testeada con Jest y Supertest. Desplegada en Railway.',
+        'image': whispersBackend,
+        'url': 'https://github.com/DBermudez23/Whispers_Backend',
+        'github': 'https://github.com/DBermudez23/Whispers_Backend'
+    },
+    {
+        'name': 'ORGANIZADOR DE PARTIDOS',
+        'description': 'App Java desktop con Swing y MySQL. Aplica MVC, Repository y Strategy para gestionar equipos, partidos y usuarios.',
+        'image': organizadorPartidos,
+        'url': '',
+        'github': 'https://github.com/DBermudez23/Organizador_Partidos'
     },
     {
         name : 'APP DE TAREAS (CRUD)',
